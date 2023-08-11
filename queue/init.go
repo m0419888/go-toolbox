@@ -3,11 +3,11 @@ package queue
 import (
 	"github.com/gin-gonic/gin"
 	"go-toolbox/queue/handler"
-	"go-toolbox/queue/queue"
+	"go-toolbox/queue/node"
 )
 
-func Init(gin *gin.Engine) *queue.Queue {
-	q := queue.NewQueue()
+func Init(gin *gin.Engine) *node.Queue {
+	q := node.NewQueue()
 	handler.Queue = q
 	if gin != nil {
 		InitRouter(gin)

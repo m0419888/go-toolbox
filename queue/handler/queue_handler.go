@@ -3,11 +3,11 @@ package handler
 import (
 	"github.com/gin-gonic/gin"
 	"go-toolbox/queue/common"
-	"go-toolbox/queue/queue"
+	"go-toolbox/queue/node"
 	"net/http"
 )
 
-var Queue *queue.Queue
+var Queue *node.Queue
 
 func Put(context *gin.Context) {
 	var body common.PutBody

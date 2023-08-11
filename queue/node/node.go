@@ -1,4 +1,4 @@
-package queue
+package node
 
 import (
 	"go-toolbox/queue/common"
