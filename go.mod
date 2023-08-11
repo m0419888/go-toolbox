@@ -1,4 +1,4 @@
-module go-toolbox
+module github.com/m0419888/go-toolbox
 
 go 1.19
 
